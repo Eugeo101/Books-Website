@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #9BBDF9;
+}
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+body::-webkit-scrollbar-track {
+    background: #FFBF00; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #E83F6F; 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(94, 94, 245) ; 
+}
+
+header{
+    height: 10vh;
+    background-color: #67AAF9; 
+    border-bottom: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+main{
+    background-color: #9BBDF9;
+    min-height: 80vh;
+}
+
+.book-center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    display: block;
+    color: black;
+    padding: 3px 6px;
+    border-top-left-radius: 15px; /*4kl gamed*/
+    border-bottom-right-radius: 15px;
+    outline: none; /*remover border*/
+    font-weight: 600;
+    margin: 20px auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 25px;
+}
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black outset 4px;
+    border-radius: 15px;
+
+}
+.grid p{
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2em;
+    color: black!important;
+}
+.img{
+    margin-top: 10px;
+    border-radius: 12px;
+    border: black 3px outset;
+    height: 400px;
+    width: 300px;
+}
+::placeholder{
+    font-weight: 100;
+    color: #565756;
+}
+#add{
+    color: black;
+    margin: 20px auto;
+    padding: 8px;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#add:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+footer{
+    background-color: #67AAF9;
+    border-top: black solid 2px;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color:black;
+    font-size: 25px;
+    text-align: center;
+}
+
